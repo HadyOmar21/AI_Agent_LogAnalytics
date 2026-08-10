@@ -63,12 +63,20 @@ class RunResult:
 
 
 def _collect_files(directory: str, pattern: str) -> list[str]:
-    """Glob every file matching `pattern` in `directory`, sorted for stable
+    """Collect every file matching `pattern` from `directory`, sorted for stable
     run-to-run ordering. Returns [] if the directory is missing/empty -- the
-    caller decides whether an empty subsystem is an error (skip) or not."""
+    caller decides whether an empty subsystem is an error (skip) or not.
+
+    `directory` may be either a FOLDER (every file matching the glob pattern is
+    collected) or a single FILE (returned as-is, ignoring the pattern). This
+    lets a user point a field at one specific log file instead of a folder --
+    handy when there's only one big CSV/log to analyze."""
     p = Path(directory)
+    if p.is_file():
+        return [str(p)]
     if not p.is_dir():
-        raise NotADirectoryError(f"Not a directory: {directory}")
+        raise NotADirectoryError(
+            f"Not a directory (and not a file): {directory}")
     return sorted(str(f) for f in p.glob(pattern) if f.is_file())
 
 
