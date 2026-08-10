@@ -1,0 +1,27 @@
+# Core LLM + orchestration
+langchain>=0.3.0
+langchain-anthropic>=0.3.0
+langchain-ollama>=0.2.0
+langchain-openai>=0.2.0      # GLM provider (OpenAI-compatible Zhipu endpoint)
+langchain-core>=0.3.0
+langgraph>=0.2.0
+pydantic>=2.0.0
+
+# Streaming
+kafka-python>=2.0.2
+
+# Observability
+langsmith>=0.1.0
+opentelemetry-sdk>=1.27.0
+opentelemetry-exporter-otlp>=1.27.0
+
+# Excel report output (one accumulating .xlsx per folder, appended each run)
+openpyxl>=3.1.0
+
+# Streamlit chat interface (app.py) -- the interactive folder-driven stage
+streamlit>=1.30.0
+
+# Note: parsers, mappings, models, severity_rules, and the correlation
+# engine use ONLY the Python standard library on purpose -- they are the
+# deterministic core of the pipeline and should stay dependency-free and
+# independently testable.

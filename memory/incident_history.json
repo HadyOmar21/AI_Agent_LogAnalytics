@@ -1,0 +1,1682 @@
+[
+  {
+    "incident_id": "inc_5cfb3fa88e",
+    "systems_involved": [
+      "ES"
+    ],
+    "generic_ids_involved": [
+      "unknown"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-06-29T08:12:08.858000",
+    "window_end": "2026-06-29T08:12:10.401000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving unknown within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:16:45.802261"
+  },
+  {
+    "incident_id": "inc_ead602a72b",
+    "systems_involved": [
+      "ES"
+    ],
+    "generic_ids_involved": [
+      "ID2"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-06-29T08:12:08.858000",
+    "window_end": "2026-06-29T08:12:10.401000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving ID2 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:16:45.802909"
+  },
+  {
+    "incident_id": "inc_6e6b3a5bdf",
+    "systems_involved": [
+      "ES"
+    ],
+    "generic_ids_involved": [
+      "unknown"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-06-29T08:12:08.858000",
+    "window_end": "2026-06-29T08:12:10.401000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving unknown within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.222340"
+  },
+  {
+    "incident_id": "inc_9910b0636c",
+    "systems_involved": [
+      "ES"
+    ],
+    "generic_ids_involved": [
+      "ID2"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-06-29T08:12:08.858000",
+    "window_end": "2026-06-29T08:12:10.401000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving ID2 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.223025"
+  },
+  {
+    "incident_id": "inc_011caf8a9c",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "PrintGroups"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving PrintGroups within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.223568"
+  },
+  {
+    "incident_id": "inc_a6f7b1b4de",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "IEval::EvalSubstitute"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving IEval::EvalSubstitute within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.224081"
+  },
+  {
+    "incident_id": "inc_9d7ac62036",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "ConfigurationManager::ProcessSpecData"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving ConfigurationManager::ProcessSpecData within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.224560"
+  },
+  {
+    "incident_id": "inc_c643c7dc32",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "ConfigurationManager::Build2"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving ConfigurationManager::Build2 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.225103"
+  },
+  {
+    "incident_id": "inc_7219862db5",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "XMLFileSpec::BuildOneFile"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving XMLFileSpec::BuildOneFile within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.225605"
+  },
+  {
+    "incident_id": "inc_2009b79f1a",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "init_pdd_logger"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving init_pdd_logger within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.226071"
+  },
+  {
+    "incident_id": "inc_30fe701bc4",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "TCPConnectionManager::Initialize"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving TCPConnectionManager::Initialize within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.226736"
+  },
+  {
+    "incident_id": "inc_c622a025de",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "ConfigIntegerManager::Retrieve"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving ConfigIntegerManager::Retrieve within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.230367"
+  },
+  {
+    "incident_id": "inc_5e7773acaf",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "ProcessManager::StartGroup"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving ProcessManager::StartGroup within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.231037"
+  },
+  {
+    "incident_id": "inc_70d4ac571e",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "SiloProcess::Start"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving SiloProcess::Start within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.231755"
+  },
+  {
+    "incident_id": "inc_254143ca4b",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "SILO_main"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving SILO_main within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.232413"
+  },
+  {
+    "incident_id": "inc_a5b05aaa46",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "IHeap::StartPeriodicHeapReport"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving IHeap::StartPeriodicHeapReport within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.233049"
+  },
+  {
+    "incident_id": "inc_931181ac90",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "MessageDispatcher::Spin"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving MessageDispatcher::Spin within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.233656"
+  },
+  {
+    "incident_id": "inc_d517498842",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "RT_OSServ::SetInDispatchLoop"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving RT_OSServ::SetInDispatchLoop within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.234258"
+  },
+  {
+    "incident_id": "inc_5b5408bf0d",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "Process::Execute"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving Process::Execute within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.234859"
+  },
+  {
+    "incident_id": "inc_25bd94d189",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "IProcessControl::ExecMain"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving IProcessControl::ExecMain within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.235702"
+  },
+  {
+    "incident_id": "inc_883f742541",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "RT_OSServ::UpdateThreadTable"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving RT_OSServ::UpdateThreadTable within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.236482"
+  },
+  {
+    "incident_id": "inc_ca165200f9",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "1002"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving 1002 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.237264"
+  },
+  {
+    "incident_id": "inc_a231d2d1d1",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "1001"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving 1001 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.238071"
+  },
+  {
+    "incident_id": "inc_4d39ff1b93",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "anacron"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving anacron within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.239013"
+  },
+  {
+    "incident_id": "inc_a2dd6373ad",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "snapd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving snapd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.239883"
+  },
+  {
+    "incident_id": "inc_980bb1f4ee",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "consoled"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving consoled within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.240847"
+  },
+  {
+    "incident_id": "inc_59c7f75e6f",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "systemd-udevd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving systemd-udevd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.241741"
+  },
+  {
+    "incident_id": "inc_1d06bbdff9",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "1051"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving 1051 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.243130"
+  },
+  {
+    "incident_id": "inc_559122f19e",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "1004"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving 1004 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.244237"
+  },
+  {
+    "incident_id": "inc_13f92ae747",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nm-dispatcher"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving nm-dispatcher within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.245184"
+  },
+  {
+    "incident_id": "inc_2c8d0fdc96",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "libvirtd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving libvirtd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.246299"
+  },
+  {
+    "incident_id": "inc_8054c45ac9",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "avahi-daemon"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving avahi-daemon within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.247318"
+  },
+  {
+    "incident_id": "inc_59cea7c66a",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "CRON"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving CRON within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.248424"
+  },
+  {
+    "incident_id": "inc_f967e2cbe9",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving nautilus within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.249488"
+  },
+  {
+    "incident_id": "inc_21f28dc541",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gsd-color"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gsd-color within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.250520"
+  },
+  {
+    "incident_id": "inc_318a40f6e7",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "totem"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving totem within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.251521"
+  },
+  {
+    "incident_id": "inc_0d2ed1c386",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gnome-shell"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gnome-shell within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.252575"
+  },
+  {
+    "incident_id": "inc_9ad349192f",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.253577"
+  },
+  {
+    "incident_id": "inc_dee925c052",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd-metadata"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd-metadata within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.254737"
+  },
+  {
+    "incident_id": "inc_55dfee2476",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "python3"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving python3 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.255994"
+  },
+  {
+    "incident_id": "inc_7d29b734a9",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving xrdp within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.257304"
+  },
+  {
+    "incident_id": "inc_3e2234e03b",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp-sesman"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving xrdp-sesman within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.258480"
+  },
+  {
+    "incident_id": "inc_eaa8fae73a",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "mtp-probe"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving mtp-probe within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.260267"
+  },
+  {
+    "incident_id": "inc_f461b3125c",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "upowerd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving upowerd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.261794"
+  },
+  {
+    "incident_id": "inc_e7d6ec8bfe",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "colord-sane"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving colord-sane within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.263222"
+  },
+  {
+    "incident_id": "inc_0ad5583dad",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "1005"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving 1005 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T12:19:31.264426"
+  },
+  {
+    "incident_id": "inc_7a21483ca3",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "ConfigIntegerManager::Retrieve (object=217)"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "The ATS ReflectConverter configuration file (reflectconverter.xml) is corrupted, incomplete, or incompatible with the current software version, causing the ConfigIntegerManager to fail to resolve critical signalling enumerations during startup.",
+    "recorded_at": "2026-08-10T12:20:47.179230"
+  },
+  {
+    "incident_id": "inc_83cc6ba788",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "RT_OSServ::UpdateThreadTable"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "Systemic resource exhaustion or OS-level instability on host MSF-VS-ARCHIVE caused cascading unplanned thread exits across multiple ATS child processes over a 6-hour window. The RT_OSServ::UpdateThreadTable component is the thread-lifecycle monitor reporting the symptom; the underlying cause is most likely memory/handle depletion or a host-level environmental issue rather than a single application-thread bug.",
+    "recorded_at": "2026-08-10T12:21:01.264972"
+  },
+  {
+    "incident_id": "inc_a97d593ed9",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "PulseReporter (object=3048)"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "The PulseReporter component (object 3048) on the MSF-VS-ARCHIVE machine experienced a transient blocking operation or resource contention during its initialization phase, causing a ~2.56 second delay when processing the pdd_pulse.xml configuration.",
+    "recorded_at": "2026-08-10T12:21:08.562066"
+  },
+  {
+    "incident_id": "inc_2ce200b769",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "TCPConnectionManager::Initialize (object=2383)"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "The TCPConnectionManager on the ATS archive server (MSF-VS-ARCHIVE) was initialized without any pre-configured outbound peer connections, causing it to enter a passive listening mode and experience an abnormally long initialization time likely due to internal timeout or retry cycles.",
+    "recorded_at": "2026-08-10T12:21:15.943195"
+  },
+  {
+    "incident_id": "inc_6a5303bfc1",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "libvirtd (QEMU domains zc1602_*-zc, zc1604_*-zc)"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "A systemic configuration change has introduced non-standard QEMU command-line arguments across multiple ZC virtual machine domains, triggering custom-argv taint flags during VM startup. The pattern's consistency across two full startup cycles and multiple domains indicates a deliberate or automated configuration modification rather than a transient anomaly.",
+    "recorded_at": "2026-08-10T12:21:36.571561"
+  },
+  {
+    "incident_id": "inc_5b19c7464b",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The Nautilus file manager is repeatedly failing to enumerate network shares because the Samba 'net' utility is either not installed on the system or is missing from the PATH environment variable of the user running the process. This is a recurring issue for this component, indicating a persistent environmental or configuration gap.",
+    "recorded_at": "2026-08-10T12:21:43.757456"
+  },
+  {
+    "incident_id": "inc_7a8945d0c5",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gnome-shell (network.js)"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "Gnome Shell's network indicator applet has a bug in its JavaScript network status module that causes it to crash with a TypeError whenever virtual network interfaces (vth*.*) are torn down. The ZC subsystem's routine VM network cleanup creates and destroys these virtual/bridge interfaces dynamically, and gnome-shell does not maintain its internal device-state array correctly when interfaces are removed, leading to repeated 'this._devices[section] is undefined' exceptions.",
+    "recorded_at": "2026-08-10T12:21:51.792494"
+  },
+  {
+    "incident_id": "inc_91c01013ba",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The gvfsd process on machine man1 is repeatedly failing to create /var/cache/samba due to a 'Permission denied' error. The most likely root cause is that Samba is either not installed or was partially uninstalled, leaving gvfsd without the necessary cache directory or filesystem permissions to create it. This has persisted for an extended window (approximately 2 hours 45 minutes), indicating a systemic configuration or package state issue rather than a transient fault.",
+    "recorded_at": "2026-08-10T12:22:00.107139"
+  },
+  {
+    "incident_id": "inc_4237d564a3",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd-metadata"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The gvfsd-metadata service is encountering critical errors due to a race condition where it attempts to query udev device properties for virtual network interfaces that have already been removed. This is triggered by the rapid creation and teardown of these interfaces on the affected machine. Given the recent history of similar incidents, this is a recurring systemic issue rather than an isolated glitch.",
+    "recorded_at": "2026-08-10T12:22:09.493959"
+  },
+  {
+    "incident_id": "inc_ec7ef6f9e8",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus (Tracker backend)"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The Tracker metadata service on machine 'man1' is misconfigured or has a corrupted key file, specifically missing the required 'DomainOntology' group. This prevents the SPARQL backend from loading, which in turn breaks Nautilus' integration with the Tracker service and causes subsequent queue operations to fail with NULL assertions.",
+    "recorded_at": "2026-08-10T12:22:16.178144"
+  },
+  {
+    "incident_id": "inc_f7d5394d97",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "python3 (ESM apt cache updater)"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The ESM apt cache updater on ZC host man1 cannot reach or authenticate to Ubuntu's ESM repositories, causing repeated failures across all four ESM repo endpoints. The simultaneous failure of all repositories points to a systemic issue\u2014most likely a network connectivity block (firewall, DNS, or proxy change) or an expired/invalid ESM token\u2014rather than individual repository outages.",
+    "recorded_at": "2026-08-10T12:22:28.385553"
+  },
+  {
+    "incident_id": "inc_f71a9c2be3",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The xrdp service on machine 'man1' is unable to read its TLS private key file due to incorrect file permissions, causing TLS connection establishment to fail and resulting in subsequent remote desktop login failures.",
+    "recorded_at": "2026-08-10T12:22:43.194774"
+  },
+  {
+    "incident_id": "inc_ffa1906e4a",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp (keymap configuration)"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "A locally customized xrdp keymap file for US English (layout 0x00000409) on machine man1 differs from the expected built-in keymap, creating a risk of incorrect keyboard input mapping for RDP sessions.",
+    "recorded_at": "2026-08-10T12:22:48.992046"
+  },
+  {
+    "incident_id": "inc_ff5c917e50",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "colord-sane"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "A stale process or port conflict is preventing the colord-sane service from binding to the BJNP broadcast socket, likely due to a previous instance failing to shut down cleanly and leaving the port occupied.",
+    "recorded_at": "2026-08-10T12:22:56.556510"
+  },
+  {
+    "incident_id": "inc_72898a4aa6",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "FAT-fs (sda1 - USB mass storage)"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The USB mass storage device on the ZC machine was not cleanly unmounted before being removed or losing power, leaving the FAT filesystem in a dirty state and triggering a kernel warning about potential data corruption.",
+    "recorded_at": "2026-08-10T12:23:03.841895"
+  },
+  {
+    "incident_id": "inc_56b8026111",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "ConfigIntegerManager::Retrieve (object 217)"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "A systemic configuration resolution failure occurred during ATS startup on the MSF-VS-ARCHIVE machine. The ReflectConverter component failed to load or match necessary metadata, causing the ConfigIntegerManager to be unable to resolve critical signalling enum and type definitions.",
+    "recorded_at": "2026-08-10T13:06:44.681071"
+  },
+  {
+    "incident_id": "inc_5d9336e28d",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "RT_OSServ::UpdateThreadTable"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "The host MSF-VS-ARCHIVE is experiencing chronic, recurring resource exhaustion or OS-level instability affecting the ATS RT_OSServ::UpdateThreadTable component. The progressive, batched pattern of unplanned thread exits over a 6-hour window\u2014starting with 4 threads, then 4 more, then pairs, then singletons\u2014indicates a gradual resource leak (memory, file handles, sockets, or thread pool capacity) that eventually forces the OS or runtime to terminate threads. This is not an isolated event: the same component on the same host has failed at least twice in the prior 14 days with an identical signature, confirming an unresolved systemic degradation pattern rather than a transient fault.",
+    "recorded_at": "2026-08-10T13:06:56.830161"
+  },
+  {
+    "incident_id": "inc_d7ac5ad36f",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "PulseReporter (object 3048)"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "The PulseReporter (object 3048) on the MSF-VS-ARCHIVE machine experienced a blocking I/O or resource-contention event during initialization while processing pdd_pulse.xml, causing a single object's Initialize call to take ~2.56 seconds instead of the typical sub-100-microsecond range. The most likely cause is that the PulseReporter's initialization routine attempted to access a file, network share, or hardware resource that was temporarily unavailable or slow to respond\u2014consistent with disk I/O contention, a stale file handle, or a transient network/storage latency spike on the archive server during the early-morning startup window.",
+    "recorded_at": "2026-08-10T13:07:11.583352"
+  },
+  {
+    "incident_id": "inc_d1ba0b965b",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "IEval::EvalSubstitute / ConfigurationManager"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "The ATS archive instance on MSF-VS-ARCHIVE is missing or has an incomplete site configuration entry for the GUIDEWAY variable in process_defaults.xml, causing IEval::EvalSubstitute to resolve GUIDEWAY to nil. This nil value then propagates downstream into child process command-line arguments, which can cause those processes to misinterpret or reject the configuration and degrade ATS archival behavior.",
+    "recorded_at": "2026-08-10T13:07:18.429996"
+  },
+  {
+    "incident_id": "inc_5e8fa1bd07",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "libvirtd (QEMU domains)"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "All eight ZC virtual machines on host man1 are being launched by libvirt with non-standard QEMU command-line arguments, triggering the 'custom-argv' taint flag on every VM start. This is most likely caused by a persistent libvirt XML configuration element (such as a <qemu:commandline> namespace block) or an external wrapper/orchestration script that injects custom QEMU arguments at domain startup. Because the pattern repeats identically across two full startup cycles and affects every ZC domain uniformly, the source is a shared configuration artifact rather than an ad-hoc or transient manual change.",
+    "recorded_at": "2026-08-10T13:07:30.766901"
+  },
+  {
+    "incident_id": "inc_983965c843",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The Nautilus file manager on machine 'man1' is repeatedly failing to enumerate Samba user shares because the Samba 'net' utility is either not installed or is not on the PATH environment variable for the process running Nautilus. This is not an isolated event \u2014 the same component has failed at least twice in the prior two weeks with the identical error signature, indicating a persistent, unremediated dependency gap rather than a transient fault.",
+    "recorded_at": "2026-08-10T13:07:40.002626"
+  },
+  {
+    "incident_id": "inc_d069a9bf2b",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gnome-shell (network.js)"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "Gnome-shell's network status module (network.js) has a known, recurring software bug that causes it to crash with a TypeError when virtual network interfaces are torn down in bulk. The module's internal device-tracking array falls out of sync with NetworkManager during rapid interface destruction, leading to undefined array lookups. This is not an isolated incident \u2014 the same component failed identically in a prior incident, confirming a persistent pattern that remains unpatched.",
+    "recorded_at": "2026-08-10T13:07:48.783884"
+  },
+  {
+    "incident_id": "inc_3b492200f8",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd / gvfsd-metadata"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "Rapid creation and removal of virtual network interfaces on man1 is flooding the udev device event queue, causing gvfsd-metadata to receive stale or null udev device objects that fail the G_UDEV_IS_DEVICE assertion. The concurrent 'Permission denied' error on /var/cache/samba indicates gvfsd is running under a service account that lacks filesystem permissions to create its cache directory, suggesting gvfsd should not be active on this ZC signalling host in the first place.",
+    "recorded_at": "2026-08-10T13:08:08.224952"
+  },
+  {
+    "incident_id": "inc_af014f3898",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus (Tracker/SPARQL backend)"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "A missing or corrupted Tracker configuration file, specifically one lacking the required 'DomainOntology' group, is preventing Nautilus from initializing the SPARQL backend. This initialization failure cascades into internal queue state corruption, causing the application to crash and disabling desktop search functionality.",
+    "recorded_at": "2026-08-10T13:08:15.618259"
+  },
+  {
+    "incident_id": "inc_dee2e75e9e",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "python3 (ESM/apt cache update)"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The ZC host man1 has lost the ability to reach esm.ubuntu.com over HTTPS, causing all four Ubuntu ESM repository InRelease file fetches to fail simultaneously. The fact that every ESM repo fails at the same time \u2014 rather than a single repo \u2014 points to a network-layer issue (DNS resolution, proxy outage, firewall rule change, or routing problem) rather than a per-repository configuration error. An expired or revoked ESM token is a secondary possibility, but token failures typically produce HTTP 401/403 errors rather than a blanket inability to fetch InRelease files.",
+    "recorded_at": "2026-08-10T13:08:29.661198"
+  },
+  {
+    "incident_id": "inc_3202bb5b86",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The xrdp service on machine 'man1' cannot read its TLS private key file (/etc/xrdp/key.pem) due to incorrect file ownership or permissions, causing TLS to be disabled and remote desktop logins to fail. This is a recurring problem\u2014xrdp on man1 has experienced the same permission-denied condition at least once before in the last 14 days\u2014indicating a systemic configuration management gap rather than a one-off glitch.",
+    "recorded_at": "2026-08-10T13:08:42.407058"
+  },
+  {
+    "incident_id": "inc_81fa9bf738",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp (keymap)"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "A local xrdp keymap file for US English (layout 0x00000409) on the ZC maintenance workstation (man1) has been customized or corrupted and no longer matches the built-in xrdp keymap, creating a configuration mismatch that risks incorrect keyboard input mapping during RDP sessions used for maintenance access.",
+    "recorded_at": "2026-08-10T13:08:48.514212"
+  },
+  {
+    "incident_id": "inc_ef12b7fa67",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "colord-sane"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "A stale colord-sane process from a prior instance is holding the BJNP broadcast socket port, preventing the current service from binding. This is a recurring pattern \u2014 the same failure has occurred at least twice in the past 14 days \u2014 indicating that colord-sane does not shut down cleanly and leaves orphaned processes or sockets behind, which then block subsequent restarts on machine man1.",
+    "recorded_at": "2026-08-10T13:09:00.122661"
+  },
+  {
+    "incident_id": "inc_0702ebf845",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "libvirtd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving libvirtd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:30:11.196466"
+  },
+  {
+    "incident_id": "inc_0215015d00",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving nautilus within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:30:11.198874"
+  },
+  {
+    "incident_id": "inc_aad8a895c5",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gnome-shell"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gnome-shell within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:30:11.201669"
+  },
+  {
+    "incident_id": "inc_aa51f102b0",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:30:11.203814"
+  },
+  {
+    "incident_id": "inc_efc06bb078",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd-metadata"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd-metadata within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:30:11.206360"
+  },
+  {
+    "incident_id": "inc_d12b6e54b0",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "python3"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving python3 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:30:11.208378"
+  },
+  {
+    "incident_id": "inc_0f7fcfed43",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving xrdp within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:30:11.210400"
+  },
+  {
+    "incident_id": "inc_1c7b3c2b36",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "colord-sane"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving colord-sane within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:30:11.212380"
+  },
+  {
+    "incident_id": "inc_25e84d9be9",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "libvirtd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving libvirtd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:31.072647"
+  },
+  {
+    "incident_id": "inc_d69c277dc5",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving nautilus within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:31.075141"
+  },
+  {
+    "incident_id": "inc_84f92acd5c",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gnome-shell"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gnome-shell within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:31.077568"
+  },
+  {
+    "incident_id": "inc_68875f6b91",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:31.079815"
+  },
+  {
+    "incident_id": "inc_8e298e9563",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd-metadata"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd-metadata within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:31.081912"
+  },
+  {
+    "incident_id": "inc_2303c33ec4",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "python3"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving python3 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:31.084474"
+  },
+  {
+    "incident_id": "inc_73a9ecfc0a",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving xrdp within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:31.086748"
+  },
+  {
+    "incident_id": "inc_1a651ee6b3",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "colord-sane"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving colord-sane within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:31.088948"
+  },
+  {
+    "incident_id": "inc_e52df83353",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "libvirtd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving libvirtd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:33.534990"
+  },
+  {
+    "incident_id": "inc_654970b350",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving nautilus within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:33.542590"
+  },
+  {
+    "incident_id": "inc_6f1c5e51af",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gnome-shell"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gnome-shell within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:33.545292"
+  },
+  {
+    "incident_id": "inc_d13b5f35b3",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:33.547521"
+  },
+  {
+    "incident_id": "inc_2902434100",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd-metadata"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd-metadata within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:33.550057"
+  },
+  {
+    "incident_id": "inc_915f350030",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "python3"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving python3 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:33.552595"
+  },
+  {
+    "incident_id": "inc_c8568de681",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving xrdp within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:33.555003"
+  },
+  {
+    "incident_id": "inc_fe76904b40",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "colord-sane"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving colord-sane within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:33:33.557637"
+  },
+  {
+    "incident_id": "inc_87283020fe",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "ConfigIntegerManager::Retrieve"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-07-27T04:29:37.266000",
+    "window_end": "2026-07-27T04:29:37.309000",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving ConfigIntegerManager::Retrieve within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:35:22.036577"
+  },
+  {
+    "incident_id": "inc_7a5f9a6473",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "libvirtd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving libvirtd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:35:22.039847"
+  },
+  {
+    "incident_id": "inc_da9ff7e2a7",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving nautilus within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:35:22.042834"
+  },
+  {
+    "incident_id": "inc_ec07e6d81b",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gnome-shell"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gnome-shell within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:35:22.045366"
+  },
+  {
+    "incident_id": "inc_4dbd0f2290",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:35:22.047740"
+  },
+  {
+    "incident_id": "inc_d2d86619fc",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd-metadata"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving gvfsd-metadata within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:35:22.050143"
+  },
+  {
+    "incident_id": "inc_0c0d307b59",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "python3"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving python3 within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:35:22.052596"
+  },
+  {
+    "incident_id": "inc_c39508da5b",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving xrdp within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:35:22.055495"
+  },
+  {
+    "incident_id": "inc_6b9b756bfc",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "colord-sane"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:49:17",
+    "window_end": "2026-08-05T05:16:46",
+    "root_cause_summary": "[MOCK] This is a placeholder, not real root-cause analysis. The deterministic correlation engine grouped findings involving colord-sane within the configured time window. Re-run with --live and a real ANTHROPIC_API_KEY to get Claude's actual reasoning about what's wrong and why.",
+    "recorded_at": "2026-08-10T18:35:22.057954"
+  },
+  {
+    "incident_id": "inc_0e1be6613d",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "ConfigIntegerManager::Retrieve"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "The ATS ConfigIntegerManager on MSF-VS-ARCHIVE is failing to resolve hundreds of enum and type definitions while loading reflectconverter.xml, affecting virtually all ATS subsystem interfaces. The breadth of unresolved references across every interface (IClusterMonitor, IAssignment, ITrain, ITrack, ISignal, ISVBZone, etc.) indicates a fundamental incompatibility between the deployed reflectconverter.xml configuration and the ATS software build, or a corrupted/malformed configuration file -- not isolated bad entries. This is a recurring problem: the same component has triggered 2 prior incidents in the last 14 days, meaning the underlying configuration or deployment process issue has not been corrected and is a persistent pattern rather than a one-time event.",
+    "recorded_at": "2026-08-10T18:43:07.339662"
+  },
+  {
+    "incident_id": "inc_83b662e357",
+    "systems_involved": [
+      "ATS"
+    ],
+    "generic_ids_involved": [
+      "RT_OSServ::UpdateThreadTable"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-07-27T04:29:34.421000",
+    "window_end": "2026-07-27T10:32:38.022000",
+    "root_cause_summary": "Chronic, recurring resource exhaustion or OS-level instability on host MSF-VS-ARCHIVE is causing progressive unplanned thread exits in the ATS RT_OSServ::UpdateThreadTable component. Over a 6-hour window, 13 threads terminated in a batched, gradual pattern rather than all at once, indicating a slow resource leak (memory, handles, or similar) or host-level degradation that eventually crosses thresholds and kills individual threads. This is not an isolated event: the same component on the same host has triggered 3 prior incidents in the last 14 days with an identical signature, confirming a persistent systemic problem on MSF-VS-ARCHIVE that has not been remediated.",
+    "recorded_at": "2026-08-10T18:43:29.634361"
+  },
+  {
+    "incident_id": "inc_13adca154b",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "libvirtd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "All ZC QEMU virtual machine domains on host man1 are being launched with non-standard QEMU command-line arguments that libvirt does not recognize, causing libvirt to flag every VM as tainted with 'custom-argv' on each startup cycle. This is a systematic configuration issue in the VM domain XML definitions or the ZC VM launch/provisioning scripts on man1, not a transient runtime fault. The issue reproduces across two complete VM startup cycles (two batches of findings) and has recurred at least 5 times in the past 14 days, confirming it is a persistent misconfiguration that has not been corrected.",
+    "recorded_at": "2026-08-10T18:43:41.732356"
+  },
+  {
+    "incident_id": "inc_495a55b003",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The Nautilus file manager on machine 'man1' is repeatedly failing to enumerate Samba user shares because the Samba 'net' utility is either not installed or not on the PATH environment variable for the Nautilus process. This is a persistent, recurring problem with 7 prior incidents in the last 14 days, indicating the underlying dependency has never been remediated.",
+    "recorded_at": "2026-08-10T18:43:44.564242"
+  },
+  {
+    "incident_id": "inc_154a89105c",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gnome-shell"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "GNOME Shell on machine man1 has a bug in its JavaScript network status module: when virtual network interfaces (veth pairs and bridges) used by the ZC subsystem are torn down, GNOME Shell's internal device-tracking array does not guard against entries that have already been removed, causing repeated TypeError exceptions (this._devices[section] is undefined). This is a chronic, recurring issue -- the same component has triggered 5 prior incidents in the last 14 days -- indicating the bug is persistent and not an isolated transient failure. The ZC subsystem's heavy use of dynamic virtual interfaces on this host repeatedly exercises the broken code path.",
+    "recorded_at": "2026-08-10T18:43:52.336154"
+  },
+  {
+    "incident_id": "inc_6819b6311e",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The gvfsd process on machine man1 is persistently failing to create /var/cache/samba due to a permission denied error. This is a recurring problem \u2014 gvfsd has triggered 6 prior incidents in the last 14 days with the same symptom, indicating a systemic configuration issue rather than a transient fault. The most likely root cause is that Samba is either not installed or only partially installed on man1, leaving gvfsd's Samba backend unable to initialize its cache directory. Alternatively, the directory or its parent lacks the correct ownership/permissions for the user context under which gvfsd runs.",
+    "recorded_at": "2026-08-10T18:44:00.048503"
+  },
+  {
+    "incident_id": "inc_8abadce28a",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "gvfsd-metadata"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "gvfsd-metadata on machine man1 is repeatedly crashing due to a race condition triggered by rapid creation and removal of virtual network interfaces. When virtual interfaces are created and quickly torn down, gvfsd-metadata receives udev events but by the time it attempts to query device properties via g_udev_device_has_property, the underlying udev device objects are already gone (NULL or invalid), causing assertion failures. This is a recurring pattern -- the same component has failed 6 times in the last 14 days with the same root cause, indicating a systemic bug rather than an isolated event.",
+    "recorded_at": "2026-08-10T18:44:10.671710"
+  },
+  {
+    "incident_id": "inc_050d7cb8f8",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "nautilus"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The Nautilus file manager on machine man1 has a chronically broken runtime environment: its Tracker desktop search integration is failing due to a malformed or missing SPARQL ontology configuration file, which cascades into NULL queue assertion failures in GLib. This is not an isolated event -- nautilus on man1 has failed repeatedly over the past 14 days across multiple subsystems (Tracker, Samba share enumeration), indicating a persistently degraded or incomplete installation with missing dependencies, configuration files, and system utilities.",
+    "recorded_at": "2026-08-10T18:44:22.487569"
+  },
+  {
+    "incident_id": "inc_8d57f941f3",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "python3"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The Ubuntu ESM apt cache update on host man1 is failing to fetch InRelease files from all four ESM repositories simultaneously, indicating a systemic connectivity or authentication failure between man1 and the ESM servers. This is not an isolated event: the python3 component on this host has experienced 5 prior incidents in the last 14 days, making this a recurring pattern that points to a persistent unresolved issue such as an expired ESM token, a broken proxy/firewall configuration, or a DNS resolution problem on man1 rather than a transient network blip.",
+    "recorded_at": "2026-08-10T18:44:30.780665"
+  },
+  {
+    "incident_id": "inc_fc8309df76",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "xrdp"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "The xRDP service on machine man1 cannot read its TLS private key file /etc/xrdp/key.pem due to incorrect file ownership or permissions, causing TLS to be disabled and remote desktop logins to fail. This is a recurring problem -- the same component has failed 7 times in the last 14 days with the same root cause, indicating that either a permanent fix was never applied or something is repeatedly resetting the file permissions (e.g., a package update, cron job, or configuration management tool).",
+    "recorded_at": "2026-08-10T18:44:38.473126"
+  },
+  {
+    "incident_id": "inc_c59432a82d",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "colord-sane"
+    ],
+    "max_severity": "ERROR",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "A stale colord-sane process from a prior instance is holding the BJNP broadcast socket port on machine man1, preventing the current colord-sane service from binding its broadcast socket. This is not an isolated event \u2014 the same failure has occurred at least 7 times in the past 14 days, indicating a systemic process lifecycle problem where colord-sane does not properly release its socket on exit or restart.",
+    "recorded_at": "2026-08-10T18:44:54.802569"
+  },
+  {
+    "incident_id": "inc_7fa87162ab",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "systemd-udevd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "A missing or misconfigured udev network link configuration file on the ZC machine (man1) is preventing systemd-udevd from generating persistent MAC addresses for dynamically created virtual interfaces (bridges, tun). NetworkManager successfully activates the interfaces independently, but the udev subsystem repeatedly fails due to the absent database or link files. This is a recurring pattern for this component, indicating a persistent configuration gap rather than a transient runtime issue.",
+    "recorded_at": "2026-08-10T18:45:00.543086"
+  },
+  {
+    "incident_id": "inc_48beeb80d3",
+    "systems_involved": [
+      "ZC"
+    ],
+    "generic_ids_involved": [
+      "snapd"
+    ],
+    "max_severity": "WARNING",
+    "window_start": "2026-08-05T02:32:17",
+    "window_end": "2026-08-05T05:17:01",
+    "root_cause_summary": "NTP time synchronization on host man1 has failed to converge within the expected 10-minute window, leaving the ZC host's clock unsynchronized. This is most likely due to either an unreachable or misconfigured NTP server, or a failure of the local time-sync daemon (e.g., systemd-timesyncd or chrony) on man1. The fact that snapd has triggered a similar warning within the last 14 days indicates this is a recurring pattern rather than an isolated event and warrants deeper investigation into the host's NTP configuration or network path to time servers.",
+    "recorded_at": "2026-08-10T18:45:05.785324"
+  }
+]

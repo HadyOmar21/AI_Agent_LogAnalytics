@@ -1,0 +1,5 @@
+2026/06/29  08:12:08:858  The SystemDB file with name D:\AboQir_sharepoint\ES\AbouQir_ES_0.00.04-31-CCP00555856-g2a240ef7\Configurations\System\SystemDB.xml has been loaded.
+2026/06/29  08:12:08:956  The Guideway file with name D:\AboQir_sharepoint\ES\AbouQir_ES_0.00.04-31-CCP00555856-g2a240ef7\Configurations\Guideway\Guideway.xml has been loaded.
+2026/06/29  08:12:08:974  The Project file with name D:\AboQir_sharepoint\ES\AbouQir_ES_0.00.04-31-CCP00555856-g2a240ef7\Configurations\Config.xml has been loaded.
+2026/06/29  08:12:10:276  D:\AboQir_sharepoint\ES\AbouQir_ES_0.00.04-31-CCP00555856-g2a240ef7\AbouQirES.exe Config.xml -Guideway.xml -SystemDB.xml -Vehicle1 -Vehicle2 -Vehicle3 -Vehicle12 -Vehicle22 -RealVehicles -NoOptions
+2026/06/29  08:12:10:401  ============================================== The Simulation for AbouQirES.exe version 0.00.04-31-CCP00555856-g2a240ef7 has started ==============================================

@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python main.py)",
+      "Bash(python main.py --no-filter)",
+      "Bash(python main.py --zc-dir sample_data --es-dir sample_data --ats-dir sample_data --mock --excel-path reports/incident_reports.xlsx)",
+      "Bash(python -c ' *)"
+    ]
+  }
+}
