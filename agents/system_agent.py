@@ -17,12 +17,33 @@ to know LangChain/pydantic exist.
 
 from __future__ import annotations
 
+import os
 from datetime import datetime
 from typing import Optional
 
 from models import Finding, LogEvent, Severity, System
 from llm_client import LLMClient
 from schemas import FindingsResponse
+
+# --- Context-window safety ------------------------------------------------
+# A per-system agent is handed every WARNING+ event for ONE subsystem. On a
+# big log folder that can be thousands of lines, and formatting them all into
+# a single prompt exceeds the model's max context length (HTTP 400 "prompt too
+# long"). To stay safely under the window we split the batch by a CHARACTER
+# budget before any LLM call: each sub-batch is analyzed independently and the
+# resulting findings are concatenated. The deterministic correlation engine
+# downstream re-clusters findings by encoded component ID + time window, so
+# splitting here does not lose cross-batch signal.
+#
+# Sized conservatively (~4 chars/token => ~15-20K tokens) to fit the smallest
+# supported context window (GLM-4.6 / glm-5.2:cloud) after room is left for the
+# system prompt and the structured output. Override via the env var if your
+# model has a notably smaller window, or raise it to cut API calls on a large
+# window. A non-positive value disables chunking (one call -- the old behavior,
+# useful only for small batches).
+MAX_EVENTS_CHARS_PER_BATCH = int(
+    os.environ.get("MAX_EVENTS_CHARS_PER_BATCH", "60000")
+)
 
 # --- Subtask-structured prompt design ------------------------------------
 # Each per-system prompt is built from ONE shared subtask skeleton plus a
@@ -106,15 +127,51 @@ def _build_system_prompt(system: System) -> str:
 SYSTEM_PROMPTS = {system: _build_system_prompt(system) for system in System}
 
 
+def _format_event(e: LogEvent) -> str:
+    """One event rendered as a single prompt line. Kept as its own helper so
+    the chunker can size batches with the exact same text the model will see
+    (no off-by-one between sizing and sending)."""
+    return (
+        f"[{e.event_id}] {e.timestamp.isoformat()} sev={e.severity.value} "
+        f"machine={e.machine} process={e.process} module={e.module} "
+        f"object={e.object_ref} channel={e.channel} :: {e.message}"
+    )
+
+
 def _format_events_for_prompt(events: list[LogEvent]) -> str:
-    lines = []
+    return "\n".join(_format_event(e) for e in events)
+
+
+def _chunk_events(events: list[LogEvent]) -> list[list[LogEvent]]:
+    """Split `events` into sub-batches whose formatted text stays under
+    MAX_EVENTS_CHARS_PER_BATCH, so a large flagged set never exceeds the
+    model's context window in a single call.
+
+    Greedy fill: keep appending events until the next one would cross the
+    budget, then start a new batch. A single event larger than the budget
+    gets its own batch (it is never dropped -- better to try and let the
+    provider reject that one oversized line than to silently lose data).
+    Returns [events] unchanged when chunking is disabled (budget <= 0) or
+    the batch already fits.
+    """
+    budget = MAX_EVENTS_CHARS_PER_BATCH
+    if budget <= 0:
+        return [events]
+
+    batches: list[list[LogEvent]] = []
+    current: list[LogEvent] = []
+    current_chars = 0
     for e in events:
-        lines.append(
-            f"[{e.event_id}] {e.timestamp.isoformat()} sev={e.severity.value} "
-            f"machine={e.machine} process={e.process} module={e.module} "
-            f"object={e.object_ref} channel={e.channel} :: {e.message}"
-        )
-    return "\n".join(lines)
+        size = len(_format_event(e)) + 1  # +1 for the joining newline
+        if current and current_chars + size > budget:
+            batches.append(current)
+            current = []
+            current_chars = 0
+        current.append(e)
+        current_chars += size
+    if current:
+        batches.append(current)
+    return batches
 
 
 def analyze_system_events(
@@ -133,6 +190,15 @@ def analyze_system_events(
     correlation engine (agents/correlation.py) only clusters findings that
     fall within a shared time window, so every Finding needs a real
     timestamp range or cross-system correlation silently never fires.
+
+    Big batches are split into context-safe sub-batches (see
+    _chunk_events) and each is analyzed in its own LLM call; the findings
+    are concatenated. The window assigned to every finding is the GLOBAL
+    min/max across all input events (not the per-batch range), which
+    preserves the original single-call semantics: all findings for a
+    subsystem share that subsystem's full time range, so cross-system
+    correlation behaves exactly as before regardless of how many batches
+    the events were split into.
     """
     if not events:
         return []
@@ -142,30 +208,32 @@ def analyze_system_events(
     if window_end is None:
         window_end = max(e.timestamp for e in events)
 
-    prompt = (
-        f"Analyze the following {len(events)} pre-filtered {system.value} log events "
-        f"and return the distinct findings you identify.\n\n"
-        f"{_format_events_for_prompt(events)}"
-    )
+    batches = _chunk_events(events)
+    findings: list[Finding] = []
+    for batch in batches:
+        prompt = (
+            f"Analyze the following {len(batch)} pre-filtered {system.value} log events "
+            f"and return the distinct findings you identify.\n\n"
+            f"{_format_events_for_prompt(batch)}"
+        )
 
-    result: FindingsResponse = client.call_structured(
-        system_prompt=SYSTEM_PROMPTS[system],
-        user_content=prompt,
-        output_schema=FindingsResponse,
-    )
+        result: FindingsResponse = client.call_structured(
+            system_prompt=SYSTEM_PROMPTS[system],
+            user_content=prompt,
+            output_schema=FindingsResponse,
+        )
 
-    findings = []
-    for f in result.findings:
-        findings.append(Finding(
-            finding_id=Finding.new_id(),
-            system=system,
-            severity=Severity(f.severity),
-            suspected_component=f.suspected_component,
-            machine=f.machine,
-            summary=f.summary,
-            evidence_event_ids=f.evidence_event_ids,
-            confidence=f.confidence,
-            window_start=window_start,
-            window_end=window_end,
-        ))
+        for f in result.findings:
+            findings.append(Finding(
+                finding_id=Finding.new_id(),
+                system=system,
+                severity=Severity(f.severity),
+                suspected_component=f.suspected_component,
+                machine=f.machine,
+                summary=f.summary,
+                evidence_event_ids=f.evidence_event_ids,
+                confidence=f.confidence,
+                window_start=window_start,
+                window_end=window_end,
+            ))
     return findings
