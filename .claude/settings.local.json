@@ -7,7 +7,11 @@
       "Bash(python -c ' *)",
       "Bash(python -c \"import ast; ast.parse\\(open\\('pipeline_runner.py',encoding='utf-8'\\).read\\(\\)\\); print\\('pipeline_runner.py: syntax OK'\\)\")",
       "Bash(python -c \"import pipeline_runner; print\\('import OK; _collect_files =', pipeline_runner._collect_files\\)\")",
-      "Bash(python -c \"import sys,platform,os; print\\('executable:', sys.executable\\); print\\('platform:', platform.platform\\(\\)\\); print\\('os.name:', os.name\\)\")"
+      "Bash(python -c \"import sys,platform,os; print\\('executable:', sys.executable\\); print\\('platform:', platform.platform\\(\\)\\); print\\('os.name:', os.name\\)\")",
+      "Bash(wsl -l -v)",
+      "Bash(wsl -- bash -c 'whoami; echo HOME=$HOME; echo \"--- /mnt/e visible? ---\"; ls -ld /mnt/e 2>&1; ls /mnt/e/LOGS 2>&1 | head')",
+      "Bash(/c/Users/ASUS/AppData/Local/Programs/Python/Python313/python -c ' *)",
+      "Bash(python -c \"import app; print\\('app.py import OK; _save_uploads_to_tempdir =', app._save_uploads_to_tempdir\\)\")"
     ]
   }
 }
