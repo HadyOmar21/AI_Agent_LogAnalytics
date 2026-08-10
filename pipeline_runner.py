@@ -70,14 +70,31 @@ def _collect_files(directory: str, pattern: str) -> list[str]:
     `directory` may be either a FOLDER (every file matching the glob pattern is
     collected) or a single FILE (returned as-is, ignoring the pattern). This
     lets a user point a field at one specific log file instead of a folder --
-    handy when there's only one big CSV/log to analyze."""
+    handy when there's only one big CSV/log to analyze.
+
+    Leading/trailing whitespace (and stray newlines/CRs introduced by pasting
+    into a UI field) are stripped -- otherwise an invisible trailing char makes
+    os.stat fail on Windows so a real file looks 'not found'."""
+    if directory is None:
+        return []
+    directory = directory.strip()
+    if not directory:
+        return []
     p = Path(directory)
     if p.is_file():
         return [str(p)]
-    if not p.is_dir():
-        raise NotADirectoryError(
-            f"Not a directory (and not a file): {directory}")
-    return sorted(str(f) for f in p.glob(pattern) if f.is_file())
+    if p.is_dir():
+        return sorted(str(f) for f in p.glob(pattern) if f.is_file())
+    # Path resolves to neither a file nor a folder. The two usual causes:
+    #   (1) a typo / leftover invisible character in the path, or
+    #   (2) this Python can't see the path at all -- e.g. Streamlit is running
+    #       under WSL/Linux where a Windows drive letter (E:\\) is not valid.
+    # We show the path quoted so invisible chars become visible.
+    raise NotADirectoryError(
+        f"Path not found (not a folder, not a file): \"{directory}\". "
+        f"Check the path for typos/hidden characters; if it looks correct, "
+        f"make sure Streamlit is running under the same OS that can see this "
+        f"path (e.g. Windows Python for E:\\ paths, not WSL).")
 
 
 def _parse_all(paths: list[str], parse_fn, mapping_store) -> list:
