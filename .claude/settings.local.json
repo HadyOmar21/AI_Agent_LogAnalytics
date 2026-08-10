@@ -4,7 +4,10 @@
       "Bash(python main.py)",
       "Bash(python main.py --no-filter)",
       "Bash(python main.py --zc-dir sample_data --es-dir sample_data --ats-dir sample_data --mock --excel-path reports/incident_reports.xlsx)",
-      "Bash(python -c ' *)"
+      "Bash(python -c ' *)",
+      "Bash(python -c \"import ast; ast.parse\\(open\\('pipeline_runner.py',encoding='utf-8'\\).read\\(\\)\\); print\\('pipeline_runner.py: syntax OK'\\)\")",
+      "Bash(python -c \"import pipeline_runner; print\\('import OK; _collect_files =', pipeline_runner._collect_files\\)\")",
+      "Bash(python -c \"import sys,platform,os; print\\('executable:', sys.executable\\); print\\('platform:', platform.platform\\(\\)\\); print\\('os.name:', os.name\\)\")"
     ]
   }
 }

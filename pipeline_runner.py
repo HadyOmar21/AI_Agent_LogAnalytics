@@ -22,6 +22,7 @@ Everything here is a thin orchestration layer; the deterministic core
 
 from __future__ import annotations
 
+import re
 import sys
 from dataclasses import dataclass, field
 from pathlib import Path
@@ -62,6 +63,17 @@ class RunResult:
         return len(self.reports)
 
 
+def _wsl_fallback(path: str) -> str | None:
+    """Translate a Windows drive path (E:\\Logs\\...) into its WSL mount form
+    (/mnt/e/Logs/...) so the same input works whether Streamlit is running
+    under Windows Python or under WSL/Linux Python. Returns None if `path`
+    isn't a Windows drive path."""
+    m = re.match(r"^([A-Za-z]):[\\/](.*)$", path)
+    if not m:
+        return None
+    return f"/mnt/{m.group(1).lower()}/{m.group(2).replace(chr(92), '/')}"
+
+
 def _collect_files(directory: str, pattern: str) -> list[str]:
     """Collect every file matching `pattern` from `directory`, sorted for stable
     run-to-run ordering. Returns [] if the directory is missing/empty -- the
@@ -72,29 +84,42 @@ def _collect_files(directory: str, pattern: str) -> list[str]:
     lets a user point a field at one specific log file instead of a folder --
     handy when there's only one big CSV/log to analyze.
 
-    Leading/trailing whitespace (and stray newlines/CRs introduced by pasting
-    into a UI field) are stripped -- otherwise an invisible trailing char makes
-    os.stat fail on Windows so a real file looks 'not found'."""
+    The input is cleaned (whitespace + zero-width copy-paste chars stripped)
+    and, if a Windows drive path isn't visible to this Python, the WSL mount
+    translation is tried as a fallback -- so the same path works whether
+    Streamlit is launched from Windows or from a WSL shell."""
     if directory is None:
         return []
-    directory = directory.strip()
+    # Drop zero-width / soft-hyphen chars that can sneak in via copy-paste and
+    # break os.stat, then strip surrounding whitespace/newlines/CRs.
+    directory = re.sub(r"[\u200b-\u200d\ufeff\u00ad]", "", directory).strip()
     if not directory:
         return []
-    p = Path(directory)
-    if p.is_file():
-        return [str(p)]
-    if p.is_dir():
-        return sorted(str(f) for f in p.glob(pattern) if f.is_file())
-    # Path resolves to neither a file nor a folder. The two usual causes:
-    #   (1) a typo / leftover invisible character in the path, or
-    #   (2) this Python can't see the path at all -- e.g. Streamlit is running
-    #       under WSL/Linux where a Windows drive letter (E:\\) is not valid.
-    # We show the path quoted so invisible chars become visible.
+
+    # Try the path as given; if it's a Windows drive path that this Python
+    # can't see (e.g. Streamlit under WSL), retry the /mnt/<drive>/ form.
+    candidates = [directory]
+    wsl = _wsl_fallback(directory)
+    if wsl:
+        candidates.append(wsl)
+
+    for cand in candidates:
+        p = Path(cand)
+        if p.is_file():
+            return [str(p)]
+        if p.is_dir():
+            return sorted(str(f) for f in p.glob(pattern) if f.is_file())
+
+    # Neither form resolved. Show the path's repr (invisible chars become
+    # visible) and which Python/platform is running, so the cause is obvious:
+    #   - a typo/hidden char in the path, or
+    #   - this Python genuinely can't see the path (wrong interpreter/OS).
     raise NotADirectoryError(
-        f"Path not found (not a folder, not a file): \"{directory}\". "
-        f"Check the path for typos/hidden characters; if it looks correct, "
-        f"make sure Streamlit is running under the same OS that can see this "
-        f"path (e.g. Windows Python for E:\\ paths, not WSL).")
+        f"Path not found (not a folder, not a file): {directory!r}. "
+        f"Running under {sys.executable} on {sys.platform}. "
+        f"If this is a Windows path, make sure Streamlit runs under Windows "
+        f"Python (or point the field at /mnt/<drive>/... under WSL), and "
+        f"check the path for typos or hidden characters.")
 
 
 def _parse_all(paths: list[str], parse_fn, mapping_store) -> list:
