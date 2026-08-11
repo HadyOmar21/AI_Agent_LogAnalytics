@@ -25,7 +25,6 @@ from __future__ import annotations
 
 import os
 import sys
-import tempfile
 from pathlib import Path
 
 import streamlit as st
@@ -124,24 +123,6 @@ def _memory_context(memory_path: str | None) -> str:
         return ""
 
 
-def _save_uploads_to_tempdir(files, label: str) -> str | None:
-    """Save Streamlit UploadedFile objects into a fresh temp dir on the server
-    and return that dir's path (or None if nothing was uploaded).
-
-    This is what makes the pipeline work on a REMOTE server: the user uploads
-    their ZC/ES/ATS log files through the browser; we materialize them onto the
-    server's local filesystem, then the pipeline reads them exactly like any
-    other log folder -- no shared/network filesystem required."""
-    if not files:
-        return None
-    tmp = tempfile.mkdtemp(prefix=f"logagent_{label}_")
-    for f in files:
-        # f.name can carry a browser-side path; keep only the basename.
-        out = Path(tmp) / Path(f.name).name
-        out.write_bytes(f.getvalue())
-    return tmp
-
-
 def main():
     st.set_page_config(page_title="Log Analytics Agent", page_icon="🛤️",
                        layout="wide")
@@ -152,43 +133,17 @@ def main():
     # ------------------------------------------------------------------ sidebar
     with st.sidebar:
         st.header("Configuration")
-        st.caption("Provide ONE subsystem's logs per field (ZC/ES/ATS). On a "
-                   "remote server, upload the files through the browser; on a "
-                   "local machine you can point at folders instead.")
-
-        input_mode = st.radio(
-            "Input method",
-            ["Upload log files", "Local folder paths"],
-            index=0, horizontal=True,
-            help="Upload when Streamlit runs on a server that can't see your "
-                 "log files; Local paths when the logs are on the same machine.")
-
-        # Defaults so both branches leave the variables defined.
-        zc_dir = es_dir = ats_dir = ""
-        zc_uploads = es_uploads = ats_uploads = None
-
-        if input_mode == "Upload log files":
-            st.caption("📁 Pick the log files from your computer — they're "
-                       "copied onto the server for this run.")
-            zc_uploads = st.file_uploader(
-                "ZC log CSV(s)", type=["csv"], accept_multiple_files=True,
-                help="Zero-cost Zone Controller logs. One or more .csv files.")
-            es_uploads = st.file_uploader(
-                "ES log file(s)", type=["log", "txt"], accept_multiple_files=True,
-                help="Electronic Interlocking logs. One or more .log/.txt files.")
-            ats_uploads = st.file_uploader(
-                "ATS trace log(s)", type=["log", "txt"], accept_multiple_files=True,
-                help="Automatic Train Supervision traces. One or more .log/.txt files.")
-        else:
-            zc_dir = st.text_input("ZC logs folder", value="",
-                                   placeholder="e.g. E:\\Logs\\ZC  (pattern *.csv)",
-                                   help="Folder of ZC log CSVs (glob pattern *.csv)")
-            es_dir = st.text_input("ES logs folder", value="",
-                                   placeholder="e.g. E:\\Logs\\ES  (pattern *.log)",
-                                   help="Folder of ES log files (glob pattern *.log)")
-            ats_dir = st.text_input("ATS logs folder", value="",
-                                    placeholder="e.g. E:\\Logs\\ATS  (pattern *.log)",
-                                    help="Folder of ATS trace logs (glob pattern *.log)")
+        st.caption("Point each field at the folder holding ONE subsystem's "
+                   "logs — three separate folders, one per type (ZC/ES/ATS).")
+        zc_dir = st.text_input("ZC logs folder", value="",
+                               placeholder="e.g. E:\\Logs\\ZC  (pattern *.csv)",
+                               help="Folder of ZC log CSVs (glob pattern *.csv)")
+        es_dir = st.text_input("ES logs folder", value="",
+                               placeholder="e.g. E:\\Logs\\ES  (pattern *.log)",
+                               help="Folder of ES log files (glob pattern *.log)")
+        ats_dir = st.text_input("ATS logs folder", value="",
+                                placeholder="e.g. E:\\Logs\\ATS  (pattern *.log)",
+                                help="Folder of ATS trace logs (glob pattern *.log)")
 
         mapping_csv = st.text_input("Mapping CSV", value="sample_data/all_ids_mapping.csv")
 
@@ -223,29 +178,15 @@ def main():
 
     # ------------------------------------------------------------- run + report
     if run_btn:
-        if input_mode == "Upload log files":
-            # Materialize uploaded files onto the server, then run over them.
-            zc_dir = _save_uploads_to_tempdir(zc_uploads, "zc")
-            es_dir = _save_uploads_to_tempdir(es_uploads, "es")
-            ats_dir = _save_uploads_to_tempdir(ats_uploads, "ats")
-            # Each temp dir holds ONLY what the user uploaded for that subsystem,
-            # so match every file regardless of extension (the uploader's type
-            # filter already guarded what was accepted).
-            zc_pattern = es_pattern = ats_pattern = "*"
-        else:
-            zc_pattern, es_pattern, ats_pattern = "*.csv", "*.log", "*.log"
         _do_run(zc_dir, es_dir, ats_dir, mapping_csv, excel_path,
-                provider, mode, use_memory, no_filter,
-                zc_pattern=zc_pattern, es_pattern=es_pattern,
-                ats_pattern=ats_pattern)
+                provider, mode, use_memory, no_filter)
 
     # ------------------------------------------------------------- chat stage
     _render_chat()
 
 
 def _do_run(zc_dir, es_dir, ats_dir, mapping_csv, excel_path,
-            provider, mode, use_memory, no_filter,
-            zc_pattern="*.csv", es_pattern="*.log", ats_pattern="*.log"):
+            provider, mode, use_memory, no_filter):
     """Execute the folder-based pipeline and render results + Excel write."""
     progress_box = st.container()
     stages = []
@@ -265,9 +206,6 @@ def _do_run(zc_dir, es_dir, ats_dir, mapping_csv, excel_path,
                 zc_dir=zc_dir or None,
                 es_dir=es_dir or None,
                 ats_dir=ats_dir or None,
-                zc_pattern=zc_pattern,
-                es_pattern=es_pattern,
-                ats_pattern=ats_pattern,
                 mapping_csv=mapping_csv,
                 mode=mode,
                 provider=provider,
