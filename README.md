@@ -1,4 +1,3 @@
-
 # Log Analytics Multi-Agent Pipeline (ZC / ES / ATS)
 
 Real-time log analytics pipeline for a rail signalling system's ZC (zone
@@ -535,4 +534,8 @@ need no change; they simply never receive that system's events again.
 - **No persistence layer** for reports/incidents shown here — wire
   `on_flush`'s output into whatever you use for tickets/alerts (Slack,
   PagerDuty, a database) at the call site in `streaming_consumer.py`'s example above.
-#
+#   A I _ A g e n t _ L o g A n a l y t i c s 
+ 
+ #   A I _ A g e n t _ L o g A n a l y t i c s 
+ 
+ 
